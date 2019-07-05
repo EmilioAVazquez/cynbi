@@ -1,0 +1,14 @@
+/Users/emiliovazquez/Documents/Summer2019/CYNBI/cynbi/Backend/bin/Debug/netcoreapp2.2/cynbi.deps.json
+/Users/emiliovazquez/Documents/Summer2019/CYNBI/cynbi/Backend/bin/Debug/netcoreapp2.2/cynbi.runtimeconfig.json
+/Users/emiliovazquez/Documents/Summer2019/CYNBI/cynbi/Backend/bin/Debug/netcoreapp2.2/cynbi.runtimeconfig.dev.json
+/Users/emiliovazquez/Documents/Summer2019/CYNBI/cynbi/Backend/bin/Debug/netcoreapp2.2/cynbi.dll
+/Users/emiliovazquez/Documents/Summer2019/CYNBI/cynbi/Backend/bin/Debug/netcoreapp2.2/cynbi.pdb
+/Users/emiliovazquez/Documents/Summer2019/CYNBI/cynbi/Backend/obj/Debug/netcoreapp2.2/cynbi.csprojAssemblyReference.cache
+/Users/emiliovazquez/Documents/Summer2019/CYNBI/cynbi/Backend/obj/Debug/netcoreapp2.2/cynbi.csproj.CoreCompileInputs.cache
+/Users/emiliovazquez/Documents/Summer2019/CYNBI/cynbi/Backend/obj/Debug/netcoreapp2.2/cynbi.RazorAssemblyInfo.cache
+/Users/emiliovazquez/Documents/Summer2019/CYNBI/cynbi/Backend/obj/Debug/netcoreapp2.2/cynbi.RazorAssemblyInfo.cs
+/Users/emiliovazquez/Documents/Summer2019/CYNBI/cynbi/Backend/obj/Debug/netcoreapp2.2/cynbi.AssemblyInfoInputs.cache
+/Users/emiliovazquez/Documents/Summer2019/CYNBI/cynbi/Backend/obj/Debug/netcoreapp2.2/cynbi.AssemblyInfo.cs
+/Users/emiliovazquez/Documents/Summer2019/CYNBI/cynbi/Backend/obj/Debug/netcoreapp2.2/cynbi.RazorTargetAssemblyInfo.cache
+/Users/emiliovazquez/Documents/Summer2019/CYNBI/cynbi/Backend/obj/Debug/netcoreapp2.2/cynbi.dll
+/Users/emiliovazquez/Documents/Summer2019/CYNBI/cynbi/Backend/obj/Debug/netcoreapp2.2/cynbi.pdb

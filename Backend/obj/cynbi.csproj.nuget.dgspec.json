@@ -1,0 +1,69 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/emiliovazquez/Documents/Summer2019/CYNBI/cynbi/Backend/cynbi.csproj": {}
+  },
+  "projects": {
+    "/Users/emiliovazquez/Documents/Summer2019/CYNBI/cynbi/Backend/cynbi.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/emiliovazquez/Documents/Summer2019/CYNBI/cynbi/Backend/cynbi.csproj",
+        "projectName": "cynbi",
+        "projectPath": "/Users/emiliovazquez/Documents/Summer2019/CYNBI/cynbi/Backend/cynbi.csproj",
+        "packagesPath": "/Users/emiliovazquez/.nuget/packages/",
+        "outputPath": "/Users/emiliovazquez/Documents/Summer2019/CYNBI/cynbi/Backend/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/emiliovazquez/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.AspNetCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "Microsoft.AspNetCore.Razor.Design": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}
