@@ -10,6 +10,17 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
+
+using GraphQL;
+using GraphQL.Http;
+using GraphQL.Server;
+using GraphQL.Types;
+using Microsoft.Extensions.Logging;
+
+using cynbi.Data;
+using cynbi.GraphQL;
+using cynbi.GraphQLTypes;
+
 namespace cynbi
 {
     public class Startup
@@ -24,15 +35,29 @@ namespace cynbi
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.Configure<CookiePolicyOptions>(options =>
-            {
-                // This lambda determines whether user consent for non-essential cookies is needed for a given request.
-                options.CheckConsentNeeded = context => true;
-                options.MinimumSameSitePolicy = SameSiteMode.None;
-            });
+            // services.Configure<CookiePolicyOptions>(options =>
+            // {
+            //     // This lambda determines whether user consent for non-essential cookies is needed for a given request.
+            //     options.CheckConsentNeeded = context => true;
+            //     options.MinimumSameSitePolicy = SameSiteMode.None;
+            // });
+            services.AddSingleton<IDependencyResolver>(s => new FuncDependencyResolver(s.GetRequiredService));
 
+            services.AddSingleton<UserType>();
+            services.AddSingleton<UserInputType>();
+            services.AddSingleton<IDocumentExecuter, DocumentExecuter>();
+            services.AddSingleton<IDocumentWriter, DocumentWriter>();
+            services.AddSingleton<PlatformQuery>();
+            services.AddSingleton<PlatformMutation>();
+            services.AddSingleton<IUserRepository,UserRepository>();
+            services.AddSingleton<ISchema, PlatformSchema>();
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+            services.AddGraphQL(_ =>
+            {
+                _.EnableMetrics = true;
+                _.ExposeExceptions = true;
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -49,6 +74,8 @@ namespace cynbi
                 app.UseHsts();
             }
 
+            // add http for Schema at default url /graphql
+            app.UseGraphQL<ISchema>("/graphql");
             app.UseHttpsRedirection();
             app.UseStaticFiles();
             app.UseCookiePolicy();
